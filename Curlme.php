@@ -40,7 +40,10 @@ class Curlme {
 		return $this->operation($url,$params,'put');
 	}	
 	
-	function operation($url,$params,$operation) {
+	
+	#########################
+	
+	private function operation($url,$params,$operation) {
 		
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL,$this->base.$url);
@@ -58,7 +61,7 @@ class Curlme {
 	
 	}
 	
-	function setOperation($ch,$operation) {
+	private function setOperation($ch,$operation) {
 		
 		switch ($operation) {
 					
