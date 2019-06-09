@@ -1,7 +1,8 @@
 <?php
-/* An Easy Curl Class That creates standard pulls */
+/* ###An Easy Curl Class That creates standard pulls 
+   All you have do is include this file or ccomposer 
 
-/* 
+include_once('Curlme.php')   
 
 $Curlme = new Curlme;
 $Curlme->setBase('https://reqres.in');
