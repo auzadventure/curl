@@ -4,17 +4,18 @@
 include_once('Curlme.php')   
 
 $Curlme = new Curlme;
+
+#Sets a Base URL
+
 $Curlme->setBase('https://reqres.in');
-$Curlme->SetBase('http://localhost/local/php/fatfree');
 ```
 
 #### Add Params
 
 ```
 $params = [ 
-			'name'=>'neo',
-			'job'=>'the two',
-		   ];
-
+	'name'=>'neo',
+	'job'=>'the two',
+];
 
 print($Curlme->post('/post/create',$params));
